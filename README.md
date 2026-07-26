@@ -50,8 +50,10 @@ bun src/index.ts
 To save the report:
 
 ```bash
-bun src/index.ts > output.json
+bun src/index.ts --format json > output.json
 ```
+
+Use `--format cli` for the human-readable terminal chart and `--format json` for LLM or pyplot analysis. Other useful options are `--count`, `--pickup`, `--bin-size`, and `--width`.
 
 ### Plotting Example
 
@@ -119,8 +121,10 @@ bun src/index.ts
 리포트를 파일로 저장하려면:
 
 ```bash
-bun src/index.ts > output.json
+bun src/index.ts --format json > output.json
 ```
+
+사람이 읽는 터미널 차트는 `--format cli`, LLM 또는 pyplot 분석용 JSON은 `--format json`을 사용합니다. `--count`, `--pickup`, `--bin-size`, `--width` 옵션도 사용할 수 있습니다.
 
 ### pyplot 예시
 
@@ -188,8 +192,10 @@ bun src/index.ts
 レポートをファイルに保存する場合:
 
 ```bash
-bun src/index.ts > output.json
+bun src/index.ts --format json > output.json
 ```
+
+人間が読むためのターミナル表示には `--format cli`、LLM や pyplot で分析する JSON には `--format json` を使います。`--count`, `--pickup`, `--bin-size`, `--width` も指定できます。
 
 ### pyplot の例
 

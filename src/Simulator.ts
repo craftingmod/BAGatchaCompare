@@ -220,7 +220,11 @@ function getStats(values: number[]) {
   }
 }
 
-export function printSimulatedResult(result: SimulationResult, label?: string) {
+export function printSimulatedResult(
+  result: SimulationResult,
+  label?: string,
+  options: DistributionOptions = {},
+) {
   if (label) {
     console.log(`[${label}]`)
   }
@@ -233,5 +237,5 @@ export function printSimulatedResult(result: SimulationResult, label?: string) {
   console.log("")
   console.log("#: simulated count, |: normal distribution, *: overlap")
   console.log("count and % are simulated values; parentheses are normal expected counts")
-  console.log(formatNormalDistribution(result))
+  console.log(formatNormalDistribution(result, options))
 }
