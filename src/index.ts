@@ -1,5 +1,12 @@
-import { simulateOldGatcha } from "./Simulator.ts"
+import { newGatcha, oldGatcha } from "./BAGatcha.ts"
+import { printSimulatedResult, simulateGatcha } from "./Simulator.ts"
 
-console.log(
-  simulateOldGatcha(100000, 2)
-)
+const simulateCount = 100000
+const pickupChar = 2
+
+const oldResult = simulateGatcha(oldGatcha, simulateCount, pickupChar)
+const newResult = simulateGatcha(newGatcha, simulateCount, pickupChar)
+
+printSimulatedResult(oldResult, "oldGatcha")
+console.log("==============\n==============\n==============")
+printSimulatedResult(newResult, "newGatcha")
