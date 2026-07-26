@@ -1,7 +1,7 @@
 import { newGatcha, oldGatcha } from "./BAGatcha.ts"
 import { createComparisonReport, simulateGatcha } from "./Simulator.ts"
 
-const simulateCount = 100000
+const simulateCount = 300000
 const pickupChar = 2
 
 const oldResult = simulateGatcha(oldGatcha, simulateCount, pickupChar)
