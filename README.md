@@ -7,7 +7,9 @@
 
 The main question is whether the new system is actually better when leftover ceiling-point value is included, not just the raw number of pulls needed to reach the target pickup characters.
 
-![Old vs New gacha comparison](docs/compare_main.png)
+![Old vs New gacha comparison (2chars)](docs/compare_2chars.png)
+
+![Old vs New gacha comparison (3chars)](docs/compare_3chars.png)
 
 ## English
 
